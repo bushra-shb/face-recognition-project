@@ -12,22 +12,30 @@ A Python-based face recognition system using NumPy, SciPy, OpenCV and an Artific
 
 ## Project Files
 
-- train.py - Model training
-- recognize.py - Face recognition
-- graph.py - Accuracy graph generation
+- train.py - Trains the face recognition model
+- recognize.py - Recognizes faces from test images
+- graph.py - Generates the accuracy graph
 - accuracy_graph.jpg - Accuracy graph
 - accuracy_results.txt - Accuracy results
+- model.npz - Trained model
+- requirements.txt - Required Python libraries
+
+## How the Project Works
+
+1. Face images are loaded from the dataset.
+2. Images are converted into numerical data.
+3. Face features are extracted.
+4. The Artificial Neural Network is trained using these features.
+5. A test image is given to the recognition system.
+6. The trained model predicts the corresponding person.
 
 ## How to Run
 
-1. Run train.py to train the model.
-2. Run recognize.py to test face recognition.
-3. Enter the path of the test image when prompted.
+Install the required libraries:
 
-## Project Workflow
-
-The project processes face images, extracts useful features and uses an Artificial Neural Network for face classification.
-
+```bash
+pip install -r requirements.txt
+python train.py
+python recognize.py
 ## Results
-
 The project includes accuracy results and an accuracy graph generated during testing.
